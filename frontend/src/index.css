@@ -7,7 +7,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-header {
+.site-container {
+  min-height: 100vh;
+}
+
+/* header {
   background-color: #404040;
   padding: 1rem;
 }
@@ -16,28 +20,26 @@ header a {
   font-weight: bold;
   text-decoration: none;
   color: #ffffff;
-}
+} */
 main {
-  padding: 1rem;
+  flex: 1;
+}
+
+.btn-primary {
+  background-color: #f0c040;
+  color: black;
 }
 .products {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
 }
 
-.product {
-  border: 1px #404040 solid;
-  margin: 2.5rem;
-  width: 26%;
+.rating span {
+  color: #ffc000;
 }
-.product img {
-  /* height: 16rem; */
-  width: 100%;
-  object-fit: cover;
-  max-width: 400px;
-}
-.product-info {
-  padding: 1rem;
+
+.card {
+  margin: 0.35rem;
 }
