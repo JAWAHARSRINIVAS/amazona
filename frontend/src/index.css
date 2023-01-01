@@ -27,7 +27,7 @@ main {
 
 .btn-primary {
   background-color: #f0c040;
-  color: black;
+  color: #000000;
 }
 .products {
   display: flex;
@@ -42,4 +42,8 @@ main {
 
 .card {
   margin: 0.35rem;
+}
+
+.img-large {
+  max-width: 100%;
 }
