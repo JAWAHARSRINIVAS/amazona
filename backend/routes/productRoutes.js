@@ -4,12 +4,12 @@ import Product from '../models/productModel.js';
 const productRouter = express.Router();
 
 productRouter.get('/', async (req, res) => {
-  const products = await Product.findOne();
+  const products = await Product.find();
   res.send(products);
 });
 
 productRouter.get(`/slug/:slug`, async (req, res) => {
-  const product = await Product.findOne((x) => x.slug === req.params.slug);
+  const product = await Product.findOne({ slug: req.params.slug });
   if (product) {
     res.send(product);
   } else {
