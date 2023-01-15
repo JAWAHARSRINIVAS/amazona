@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
 import { Store } from '../Store';
-import { getError } from '../utils';
+import { getError } from '../util';
 import Button from 'react-bootstrap/esm/Button';
 
 const reducer = (state, action) => {
@@ -49,7 +49,6 @@ export default function OrderHistoryScreen() {
     };
     fetchData();
   }, [userInfo]);
-  
   return (
     <div>
       <Helmet>
