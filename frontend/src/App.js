@@ -138,9 +138,9 @@ function App() {
             ))} */}
             {categories.map((category) => (
               <Nav.Item key={category}>
-                {/* <LinkContainer to={`/search?category=${category}`}>
-                  
-                </LinkContainer> */}
+                {/* <LinkContainer
+                  to={`/search?category=${category}`}
+                ></LinkContainer> */}
                 <Nav.Link>{category}</Nav.Link>
               </Nav.Item>
             ))}
