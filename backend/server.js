@@ -25,10 +25,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/api/seed', seedRouter);
-app.use(
-  'https://wild-rose-jellyfish-veil.cyclic.app/api/products',
-  productRouter
-);
+app.use('/api/products', productRouter);
 // app.use(core());
 
 app.use('/api/users', userRouter);
