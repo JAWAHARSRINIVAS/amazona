@@ -6,7 +6,7 @@ import productRouter from './routes/productRoutes.js';
 import seedRouter from './routes/seedRoutes.js';
 import userRouter from './routes/userRoutes.js';
 import orderRouter from './routes/orderRoutes.js';
-// import core from 'cors';
+import core from 'cors';
 
 dotenv.config();
 
@@ -26,7 +26,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/api/seed', seedRouter);
 app.use('/api/products', productRouter);
-// app.use(core());
+app.use(core());
 
 app.use('/api/users', userRouter);
 app.use('/api/orders', orderRouter);
