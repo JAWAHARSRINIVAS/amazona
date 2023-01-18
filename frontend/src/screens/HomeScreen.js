@@ -33,7 +33,7 @@ function HomeScreen() {
       dispatch({ type: 'FETCH_REQUEST' });
       try {
         const result = await axios.get(
-          'https://wild-rose-jellyfish-veil.cyclic.app/api/products'
+          'https://long-puce-peplum.cyclic.app/api/products'
         );
         dispatch({ type: 'FETCH_SUCCESS', payload: result.data });
       } catch (err) {
