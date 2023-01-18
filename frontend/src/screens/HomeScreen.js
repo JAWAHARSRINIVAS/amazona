@@ -32,9 +32,12 @@ function HomeScreen() {
     const fetchData = async () => {
       dispatch({ type: 'FETCH_REQUEST' });
       try {
+        console.log('before');
         const result = await axios.get(
-          'https://long-puce-peplum.cyclic.app/api/products'
+          'https://wild-rose-jellyfish-veil.cyclic.app/api/products'
         );
+        console.log('after');
+        console.log(result);
         dispatch({ type: 'FETCH_SUCCESS', payload: result.data });
       } catch (err) {
         dispatch({ type: 'FETCH_FAIL', payload: getError(err) });
