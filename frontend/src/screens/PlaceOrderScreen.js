@@ -49,7 +49,7 @@ export default function PlaceOrderScreen() {
       dispatch({ type: 'CREATE_REQUEST' });
 
       const { data } = await axios.post(
-        '/api/orders',
+        'https://wild-rose-jellyfish-veil.cyclic.app/api/orders',
         {
           orderItems: cart.cartItems,
           shippingAddress: cart.shippingAddress,

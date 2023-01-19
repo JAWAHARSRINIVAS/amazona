@@ -29,7 +29,7 @@ export default function SignupScreen() {
       return;
     }
     try {
-      const { data } = await axios.post('/api/users/signup', {
+      const { data } = await axios.post('https://wild-rose-jellyfish-veil.cyclic.app/api/users/signup', {
         name,
         email,
         password,

@@ -35,7 +35,7 @@ export default function OrderHistoryScreen() {
       dispatch({ type: 'FETCH_REQUEST' });
       try {
         const { data } = await axios.get(
-          `/api/orders/mine`,
+          `https://wild-rose-jellyfish-veil.cyclic.app/api/orders/mine`,
 
           { headers: { Authorization: `Bearer ${userInfo.token}` } }
         );
